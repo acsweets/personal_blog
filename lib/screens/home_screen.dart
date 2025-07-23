@@ -17,7 +17,7 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   String? selectedCategory;
-  final List<String> categories = ['全部', '技�?, '思维', '成长', '英语', '情绪'];
+  final List<String> categories = ['全部', '技�?, '思维', '成长', '英语', '情绪'];
 
   @override
   Widget build(BuildContext context) {
@@ -147,7 +147,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       borderRadius: BorderRadius.circular(20),
                     ),
                   ),
-                  child: const Text('开始打�?),
+                  child: const Text('开始打�?),
                 ),
               ],
             ),
@@ -169,7 +169,7 @@ class _HomeScreenState extends State<HomeScreen> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            '最新文�?,
+            '最新文�?,
             style: Theme.of(context).textTheme.headlineSmall?.copyWith(
               fontWeight: FontWeight.w600,
               color: const Color(0xFF1E2A38),
@@ -196,7 +196,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       ),
                       const SizedBox(height: 16),
                       Text(
-                        '暂无文章，开始写作吧�?,
+                        '暂无文章，开始写作吧�?,
                         style: TextStyle(color: Colors.grey[600]),
                       ),
                     ],
