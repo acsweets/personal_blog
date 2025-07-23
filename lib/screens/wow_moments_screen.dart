@@ -12,7 +12,7 @@ class WowMomentsScreen extends StatefulWidget {
 
 class _WowMomentsScreenState extends State<WowMomentsScreen> {
   String _selectedCategory = '全部';
-  final List<String> _categories = ['全部', '技术惊喜', '自然感动', '社会观察', '他人视角'];
+  final List<String> _categories = ['全部', '技术惊�?, '自然感动', '社会观察', '他人视角'];
 
   @override
   Widget build(BuildContext context) {
@@ -32,7 +32,7 @@ class _WowMomentsScreenState extends State<WowMomentsScreen> {
               const Spacer(),
               ElevatedButton.icon(
                 icon: const Icon(Icons.add),
-                label: const Text('记录哇因子'),
+                label: const Text('记录哇因�?),
                 onPressed: _showAddWowMomentDialog,
               ),
             ],
@@ -69,7 +69,7 @@ class _WowMomentsScreenState extends State<WowMomentsScreen> {
                   children: [
                     Icon(Icons.star_outline, size: 64, color: Colors.grey),
                     SizedBox(height: 16),
-                    Text('还没有记录哇因子，开始记录吧！'),
+                    Text('还没有记录哇因子，开始记录吧�?),
                   ],
                 ),
               );
@@ -88,7 +88,7 @@ class _WowMomentsScreenState extends State<WowMomentsScreen> {
                           Container(
                             padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                             decoration: BoxDecoration(
-                              color: Theme.of(context).primaryColor.withValues(alpha: 0.1),
+                              color: Theme.of(context).primaryColor.withOpacity(0.1),
                               borderRadius: BorderRadius.circular(12),
                             ),
                             child: Text(
@@ -134,13 +134,13 @@ class _WowMomentsScreenState extends State<WowMomentsScreen> {
   void _showAddWowMomentDialog() {
     final contentController = TextEditingController();
     final keywordsController = TextEditingController();
-    String selectedCategory = '技术惊喜';
+    String selectedCategory = '技术惊�?;
 
     showDialog(
       context: context,
       builder: (context) => StatefulBuilder(
         builder: (context, setState) => AlertDialog(
-          title: const Text('记录哇因子'),
+          title: const Text('记录哇因�?),
           content: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
@@ -162,7 +162,7 @@ class _WowMomentsScreenState extends State<WowMomentsScreen> {
               const SizedBox(height: 16),
               TextField(
                 controller: keywordsController,
-                decoration: const InputDecoration(labelText: '关键词 (用逗号分隔)'),
+                decoration: const InputDecoration(labelText: '关键�?(用逗号分隔)'),
               ),
             ],
           ),

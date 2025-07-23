@@ -25,7 +25,7 @@ class TagFilter extends StatelessWidget {
         return Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text('标签筛选', style: Theme.of(context).textTheme.titleMedium),
+            Text('标签筛�?, style: Theme.of(context).textTheme.titleMedium),
             const SizedBox(height: 8),
             Wrap(
               spacing: 8,

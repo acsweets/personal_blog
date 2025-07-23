@@ -2,14 +2,9 @@ import 'package:flutter/material.dart';
 
 class AppTheme {
   // 主色配色
-  static const Color primaryColor = Color(0xFF1E2A38); // 星空蓝
-  static const Color accentColor = Color(0xFF6C5CE7); // 紫光渐变起始
+  static const Color primaryColor = Color(0xFF1E2A38); // 星空�?  static const Color accentColor = Color(0xFF6C5CE7); // 紫光渐变起始
   static const Color accentColorEnd = Color(0xFFA29BFE); // 紫光渐变结束
-  static const Color backgroundColor = Color(0xFFF9F9F9); // 象牙白
-  static const Color cardBackground = Color(0xFFF7F8FA); // 微米灰
-  static const Color growthColor = Color(0xFF00B894); // 萌芽绿
-  static const Color sunsetColor = Color(0xFFFAB1A0); // 暮光橙
-  
+  static const Color backgroundColor = Color(0xFFF9F9F9); // 象牙�?  static const Color cardBackground = Color(0xFFF7F8FA); // 微米�?  static const Color growthColor = Color(0xFF00B894); // 萌芽�?  static const Color sunsetColor = Color(0xFFFAB1A0); // 暮光�?  
   static ThemeData get lightTheme {
     return ThemeData(
       useMaterial3: true,

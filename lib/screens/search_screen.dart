@@ -64,7 +64,7 @@ class _SearchScreenState extends State<SearchScreen> {
           children: [
             Icon(Icons.search, size: 64, color: Colors.grey),
             SizedBox(height: 16),
-            Text('输入关键词搜索文章'),
+            Text('输入关键词搜索文�?),
           ],
         ),
       );

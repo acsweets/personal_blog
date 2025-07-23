@@ -23,8 +23,7 @@ class TechCardsScreen extends StatelessWidget {
                 icon: const Icon(Icons.add),
                 label: const Text('添加卡片'),
                 onPressed: () {
-                  // TODO: 添加技术卡片功能
-                },
+                  // TODO: 添加技术卡片功�?                },
               ),
             ],
           ),

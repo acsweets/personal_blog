@@ -47,7 +47,7 @@ class AboutScreen extends StatelessWidget {
               borderRadius: BorderRadius.circular(60),
               boxShadow: [
                 BoxShadow(
-                  color: const Color(0xFF6C5CE7).withValues(alpha: 0.3),
+                  color: const Color(0xFF6C5CE7).withOpacity(0.3),
                   blurRadius: 20,
                   offset: const Offset(0, 8),
                 ),
@@ -61,7 +61,7 @@ class AboutScreen extends StatelessWidget {
           ),
           const SizedBox(height: 24),
           const Text(
-            '你好，我是重拾者',
+            '你好，我是重拾�?,
             style: TextStyle(
               fontSize: 32,
               fontWeight: FontWeight.bold,
@@ -70,7 +70,7 @@ class AboutScreen extends StatelessWidget {
           ),
           const SizedBox(height: 16),
           const Text(
-            '一个在学习路上不断探索、反思与成长的记录者',
+            '一个在学习路上不断探索、反思与成长的记录�?,
             style: TextStyle(
               fontSize: 18,
               color: Colors.white70,
@@ -90,7 +90,7 @@ class AboutScreen extends StatelessWidget {
         borderRadius: BorderRadius.circular(16),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withValues(alpha: 0.05),
+            color: Colors.black.withOpacity(0.05),
             blurRadius: 10,
             offset: const Offset(0, 4),
           ),
@@ -100,7 +100,7 @@ class AboutScreen extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            '关于这个小宇宙',
+            '关于这个小宇�?,
             style: TextStyle(
               fontSize: 24,
               fontWeight: FontWeight.bold,
@@ -109,7 +109,7 @@ class AboutScreen extends StatelessWidget {
           ),
           SizedBox(height: 16),
           Text(
-            '这里是我的数字花园，记录着学习路上的点点滴滴。从技术探索到思维反思，从每日成长到哇因子观察，每一篇文字都是我与知识、与自己对话的痕迹。',
+            '这里是我的数字花园，记录着学习路上的点点滴滴。从技术探索到思维反思，从每日成长到哇因子观察，每一篇文字都是我与知识、与自己对话的痕迹�?,
             style: TextStyle(
               fontSize: 16,
               color: Color(0xFF4B5563),
@@ -118,7 +118,7 @@ class AboutScreen extends StatelessWidget {
           ),
           SizedBox(height: 16),
           Text(
-            '我相信学习不仅仅是获取知识，更是一种生活方式。在这个快速变化的时代，保持好奇心、拥抱不确定性，是我们每个人都需要的超能力。',
+            '我相信学习不仅仅是获取知识，更是一种生活方式。在这个快速变化的时代，保持好奇心、拥抱不确定性，是我们每个人都需要的超能力�?,
             style: TextStyle(
               fontSize: 16,
               color: Color(0xFF4B5563),
@@ -133,10 +133,10 @@ class AboutScreen extends StatelessWidget {
   Widget _buildKeywordsSection() {
     final keywords = [
       {'text': '创造力波动', 'color': const Color(0xFF6C5CE7)},
-      {'text': '拖延观察员', 'color': const Color(0xFFFAB1A0)},
-      {'text': '思维实验者', 'color': const Color(0xFF00B894)},
-      {'text': '学习内驱力研究', 'color': const Color(0xFF74B9FF)},
-      {'text': '哇因子收集者', 'color': const Color(0xFFA29BFE)},
+      {'text': '拖延观察�?, 'color': const Color(0xFFFAB1A0)},
+      {'text': '思维实验�?, 'color': const Color(0xFF00B894)},
+      {'text': '学习内驱力研�?, 'color': const Color(0xFF74B9FF)},
+      {'text': '哇因子收集�?, 'color': const Color(0xFFA29BFE)},
       {'text': '数字游牧', 'color': const Color(0xFFE17055)},
     ];
 
@@ -144,7 +144,7 @@ class AboutScreen extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         const Text(
-          '自我认知关键词',
+          '自我认知关键�?,
           style: TextStyle(
             fontSize: 24,
             fontWeight: FontWeight.bold,
@@ -158,10 +158,10 @@ class AboutScreen extends StatelessWidget {
           children: keywords.map((keyword) => Container(
             padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
             decoration: BoxDecoration(
-              color: (keyword['color'] as Color).withValues(alpha: 0.1),
+              color: (keyword['color'] as Color).withOpacity(0.1),
               borderRadius: BorderRadius.circular(20),
               border: Border.all(
-                color: (keyword['color'] as Color).withValues(alpha: 0.3),
+                color: (keyword['color'] as Color).withOpacity(0.3),
               ),
             ),
             child: Text(
@@ -216,7 +216,7 @@ class AboutScreen extends StatelessWidget {
             borderRadius: BorderRadius.circular(16),
             boxShadow: [
               BoxShadow(
-                color: Colors.black.withValues(alpha: 0.05),
+                color: Colors.black.withOpacity(0.05),
                 blurRadius: 10,
                 offset: const Offset(0, 4),
               ),
@@ -289,7 +289,7 @@ class AboutScreen extends StatelessWidget {
       child: Column(
         children: [
           const Text(
-            '让我们连接',
+            '让我们连�?,
             style: TextStyle(
               fontSize: 24,
               fontWeight: FontWeight.bold,
@@ -298,7 +298,7 @@ class AboutScreen extends StatelessWidget {
           ),
           const SizedBox(height: 16),
           const Text(
-            '如果你也在学习的路上，欢迎与我交流',
+            '如果你也在学习的路上，欢迎与我交�?,
             style: TextStyle(
               fontSize: 16,
               color: Colors.white70,
@@ -322,7 +322,7 @@ class AboutScreen extends StatelessWidget {
               const SizedBox(width: 24),
               _ContactButton(
                 icon: Icons.radio,
-                label: '小宇宙',
+                label: '小宇�?,
                 onTap: () => _launchUrl('https://xiaoyuzhou.fm/'),
               ),
             ],
@@ -359,7 +359,7 @@ class _ContactButton extends StatelessWidget {
       child: Container(
         padding: const EdgeInsets.all(16),
         decoration: BoxDecoration(
-          color: Colors.white.withValues(alpha: 0.2),
+          color: Colors.white.withOpacity(0.2),
           borderRadius: BorderRadius.circular(12),
         ),
         child: Column(

@@ -39,7 +39,7 @@ class StatusBar extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  '我的状态',
+                  '我的状�?,
                   style: Theme.of(context).textTheme.titleSmall?.copyWith(
                     color: const Color(0xFF4A5568),
                     fontWeight: FontWeight.w600,
@@ -56,7 +56,7 @@ class StatusBar extends StatelessWidget {
             ),
           ),
           Text(
-            DateFormat('MM月dd日').format(now),
+            DateFormat('MM月dd�?).format(now),
             style: Theme.of(context).textTheme.bodySmall?.copyWith(
               color: const Color(0xFF9CA3AF),
             ),
@@ -75,7 +75,7 @@ class StatusBar extends StatelessWidget {
       };
     } else if (hour >= 9 && hour < 12) {
       return {
-        'emoji': '☀️',
+        'emoji': '☀�?,
         'status': '活力满满',
         'color': const Color(0xFFFDCB6E),
       };
@@ -87,20 +87,20 @@ class StatusBar extends StatelessWidget {
       };
     } else if (hour >= 14 && hour < 18) {
       return {
-        'emoji': '🌤️',
+        'emoji': '🌤�?,
         'status': '专注工作',
         'color': const Color(0xFF74B9FF),
       };
     } else if (hour >= 18 && hour < 21) {
       return {
         'emoji': '🌆',
-        'status': '黄昏思考',
+        'status': '黄昏思�?,
         'color': const Color(0xFFA29BFE),
       };
     } else if (hour >= 21 && hour < 24) {
       return {
         'emoji': '🌙',
-        'status': '夜晚沉思',
+        'status': '夜晚沉�?,
         'color': const Color(0xFF6C5CE7),
       };
     } else {

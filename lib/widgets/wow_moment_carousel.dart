@@ -19,9 +19,9 @@ class WowMomentCarousel extends StatelessWidget {
                 children: [
                   Icon(Icons.star_outline, size: 48, color: Colors.grey[400]),
                   const SizedBox(height: 8),
-                  Text('今日哇因子', style: Theme.of(context).textTheme.titleMedium),
+                  Text('今日哇因�?, style: Theme.of(context).textTheme.titleMedium),
                   const SizedBox(height: 4),
-                  Text('记录每天的惊喜时刻', style: Theme.of(context).textTheme.bodySmall),
+                  Text('记录每天的惊喜时�?, style: Theme.of(context).textTheme.bodySmall),
                 ],
               ),
             ),
@@ -38,7 +38,7 @@ class WowMomentCarousel extends StatelessWidget {
                   children: [
                     const Icon(Icons.star, color: Colors.amber),
                     const SizedBox(width: 8),
-                    Text('今日哇因子', style: Theme.of(context).textTheme.titleMedium),
+                    Text('今日哇因�?, style: Theme.of(context).textTheme.titleMedium),
                   ],
                 ),
                 const SizedBox(height: 12),
