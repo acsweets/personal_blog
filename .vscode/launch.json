@@ -1,0 +1,47 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "personal_blog",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "personal_blog (profile mode)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "personal_blog (release mode)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "Flutter Chrome Debug",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main.dart",
+            "args": [
+                "-d",
+                "chrome",
+                "--web-renderer",
+                "html"
+            ]
+        },
+        {
+            "name": "Flutter Chrome Profile",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main.dart",
+            "flutterMode": "profile",
+            "args": [
+                "-d",
+                "chrome",
+                "--web-renderer",
+                "html"
+            ]
+        }
+    ]
+}
