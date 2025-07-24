@@ -143,10 +143,10 @@ class StarSweepPainter extends CustomPainter {
     final paint = Paint()
       ..shader = LinearGradient(
         colors: [
-          const Color(0xFF6C5CE7).withOpacity(0.0),
+          const Color(0xFF6C5CE7).withValues(alpha: 0.0),
           const Color(0xFF6C5CE7),
           const Color(0xFFA29BFE),
-          const Color(0xFFA29BFE).withOpacity(0.0),
+          const Color(0xFFA29BFE).withValues(alpha: 0.0),
         ],
         stops: const [0.0, 0.3, 0.7, 1.0],
       ).createShader(Rect.fromLTWH(0, 0, size.width, size.height))

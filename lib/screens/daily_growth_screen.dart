@@ -41,7 +41,7 @@ class DailyGrowthScreen extends StatelessWidget {
                   children: [
                     Icon(Icons.trending_up, size: 64, color: Colors.grey),
                     SizedBox(height: 16),
-                    Text('开始记录每日成长吧�?),
+                    Text('开始记录每日成长吧！'),
                   ],
                 ),
               );
@@ -71,7 +71,7 @@ class DailyGrowthScreen extends StatelessWidget {
                       ),
                       const SizedBox(height: 16),
                       _GrowthSection(
-                        title: '🌟 今日哇因�?,
+                        title: '🌟 今日哇因子',
                         content: growth.wowMoment,
                       ),
                       _GrowthSection(
@@ -79,11 +79,11 @@ class DailyGrowthScreen extends StatelessWidget {
                         content: growth.englishSentence,
                       ),
                       _GrowthSection(
-                        title: '💡 技术卡�?,
+                        title: '💡 技术卡片',
                         content: growth.techCard,
                       ),
                       _GrowthSection(
-                        title: '🤔 思维反�?,
+                        title: '🤔 思维反思',
                         content: growth.reflection,
                       ),
                     ],
@@ -115,7 +115,7 @@ class DailyGrowthScreen extends StatelessWidget {
               children: [
                 TextField(
                   controller: wowController,
-                  decoration: const InputDecoration(labelText: '今日哇因�?),
+                  decoration: const InputDecoration(labelText: '今日哇因子'),
                   maxLines: 2,
                 ),
                 const SizedBox(height: 12),
@@ -127,13 +127,13 @@ class DailyGrowthScreen extends StatelessWidget {
                 const SizedBox(height: 12),
                 TextField(
                   controller: techController,
-                  decoration: const InputDecoration(labelText: '技术卡�?),
+                  decoration: const InputDecoration(labelText: '技术卡片'),
                   maxLines: 2,
                 ),
                 const SizedBox(height: 12),
                 TextField(
                   controller: reflectionController,
-                  decoration: const InputDecoration(labelText: '思维反�?),
+                  decoration: const InputDecoration(labelText: '思维反思'),
                   maxLines: 3,
                 ),
                 const SizedBox(height: 12),

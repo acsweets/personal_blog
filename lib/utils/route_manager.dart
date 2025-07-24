@@ -42,7 +42,7 @@ class RouteManager {
         page = const AboutScreen();
         break;
       default:
-        page = Center(child: Text('页面未找�? $routeName'));
+        page = Center(child: Text('页面未找到 $routeName'));
         routeName = AppRoutes.home;
     }
 

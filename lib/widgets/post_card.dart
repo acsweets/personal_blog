@@ -16,7 +16,7 @@ class PostCard extends StatelessWidget {
         borderRadius: BorderRadius.circular(16),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.05),
+            color: Colors.black.withValues(alpha: 0.05),
             blurRadius: 10,
             offset: const Offset(0, 4),
           ),
@@ -37,7 +37,7 @@ class PostCard extends StatelessWidget {
                   Container(
                     padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
                     decoration: BoxDecoration(
-                      color: _getCategoryColor(post.category).withOpacity(0.1),
+                      color: _getCategoryColor(post.category).withValues(alpha: 0.1),
                       borderRadius: BorderRadius.circular(20),
                     ),
                     child: Text(
@@ -54,7 +54,7 @@ class PostCard extends StatelessWidget {
                     Container(
                       padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                       decoration: BoxDecoration(
-                        color: const Color(0xFFFAB1A0).withOpacity(0.2),
+                        color: const Color(0xFFFAB1A0).withValues(alpha: 0.2),
                         borderRadius: BorderRadius.circular(12),
                       ),
                       child: const Text(
@@ -101,7 +101,7 @@ class PostCard extends StatelessWidget {
                   ),
                   const SizedBox(width: 4),
                   Text(
-                    DateFormat('yyyy年MM月dd�?).format(post.createdAt),
+                    DateFormat('yyyy年MM月dd日').format(post.createdAt),
                     style: TextStyle(
                       fontSize: 12,
                       color: Colors.grey[500],
@@ -114,7 +114,7 @@ class PostCard extends StatelessWidget {
                         margin: const EdgeInsets.only(left: 6),
                         padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                         decoration: BoxDecoration(
-                          color: const Color(0xFF6C5CE7).withOpacity(0.1),
+                          color: const Color(0xFF6C5CE7).withValues(alpha: 0.1),
                           borderRadius: BorderRadius.circular(12),
                         ),
                         child: Text(
@@ -138,7 +138,7 @@ class PostCard extends StatelessWidget {
 
   Color _getCategoryColor(String category) {
     switch (category) {
-      case '技�?:
+      case '技术':
         return const Color(0xFF6C5CE7);
       case '思维':
         return const Color(0xFF00B894);

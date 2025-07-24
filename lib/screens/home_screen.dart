@@ -17,33 +17,21 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   String? selectedCategory;
-  final List<String> categories = ['全部', '技�?, '思维', '成长', '英语', '情绪'];
+  final List<String> categories = ['全部', '技术', '思维', '成长', '英语', '情绪'];
 
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
-        SlideInAnimation(
-          delay: const Duration(milliseconds: 100),
-          child: const HeroBanner(),
-        ),
+        const HeroBanner(),
         const SizedBox(height: 32),
-        SlideInAnimation(
-          delay: const Duration(milliseconds: 200),
-          child: _buildCategoryFilter(),
-        ),
+        _buildCategoryFilter(),
         const SizedBox(height: 24),
         _buildLatestPosts(),
         const SizedBox(height: 32),
-        SlideInAnimation(
-          delay: const Duration(milliseconds: 400),
-          child: _buildDailyGrowthEntry(),
-        ),
+        _buildDailyGrowthEntry(),
         const SizedBox(height: 32),
-        SlideInAnimation(
-          delay: const Duration(milliseconds: 500),
-          child: const StatusBar(),
-        ),
+        const StatusBar(),
         const SizedBox(height: 48),
       ],
     );
@@ -80,7 +68,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       });
                     },
                     backgroundColor: Colors.white,
-                    selectedColor: const Color(0xFF6C5CE7).withOpacity(0.2),
+                    selectedColor: const Color(0xFF6C5CE7).withValues(alpha: 0.2),
                     checkmarkColor: const Color(0xFF6C5CE7),
                     labelStyle: TextStyle(
                       color: isSelected ? const Color(0xFF6C5CE7) : const Color(0xFF666666),
@@ -109,7 +97,7 @@ class _HomeScreenState extends State<HomeScreen> {
         borderRadius: BorderRadius.circular(16),
         boxShadow: [
           BoxShadow(
-            color: const Color(0xFF6C5CE7).withOpacity(0.3),
+            color: const Color(0xFF6C5CE7).withValues(alpha: 0.3),
             blurRadius: 20,
             offset: const Offset(0, 8),
           ),
@@ -147,7 +135,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       borderRadius: BorderRadius.circular(20),
                     ),
                   ),
-                  child: const Text('开始打�?),
+                  child: const Text('开始打卡'),
                 ),
               ],
             ),
@@ -169,7 +157,7 @@ class _HomeScreenState extends State<HomeScreen> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            '最新文�?,
+            '最新文章',
             style: Theme.of(context).textTheme.headlineSmall?.copyWith(
               fontWeight: FontWeight.w600,
               color: const Color(0xFF1E2A38),
@@ -196,7 +184,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       ),
                       const SizedBox(height: 16),
                       Text(
-                        '暂无文章，开始写作吧�?,
+                        '暂无文章，开始写作吧！',
                         style: TextStyle(color: Colors.grey[600]),
                       ),
                     ],
@@ -214,4 +202,3 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 }
-

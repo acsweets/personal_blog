@@ -15,10 +15,10 @@ class _WriteScreenState extends State<WriteScreen> {
   final _contentController = TextEditingController();
   final _summaryController = TextEditingController();
   final _tagsController = TextEditingController();
-  String _selectedCategory = '技�?;
+  String _selectedCategory = '技术';
   bool _isDraft = false;
 
-  final List<String> _categories = ['技�?, '思维', '成长', '英语', '情绪', '其他'];
+  final List<String> _categories = ['技术', '思维', '成长', '英语', '情绪', '其他'];
 
   @override
   Widget build(BuildContext context) {
@@ -31,7 +31,7 @@ class _WriteScreenState extends State<WriteScreen> {
             Row(
               children: [
                 const Text(
-                  '写文�?,
+                  '写文章',
                   style: TextStyle(
                     fontSize: 24,
                     fontWeight: FontWeight.bold,
@@ -118,7 +118,7 @@ class _WriteScreenState extends State<WriteScreen> {
   void _savePost() {
     if (_titleController.text.isEmpty || _contentController.text.isEmpty) {
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('标题和内容不能为�?)),
+        const SnackBar(content: Text('标题和内容不能为空')),
       );
       return;
     }
@@ -143,7 +143,7 @@ class _WriteScreenState extends State<WriteScreen> {
     Navigator.pop(context);
     
     ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(content: Text(_isDraft ? '草稿已保�? : '文章已发�?)),
+      SnackBar(content: Text(_isDraft ? '草稿已保存' : '文章已发布')),
     );
   }
 

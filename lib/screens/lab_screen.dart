@@ -41,7 +41,7 @@ class LabScreen extends StatelessWidget {
               Container(
                 padding: const EdgeInsets.all(12),
                 decoration: BoxDecoration(
-                  color: Colors.white.withOpacity(0.2),
+                  color: Colors.white.withValues(alpha: 0.2),
                   borderRadius: BorderRadius.circular(12),
                 ),
                 child: const Icon(
@@ -65,7 +65,7 @@ class LabScreen extends StatelessWidget {
                     ),
                     SizedBox(height: 8),
                     Text(
-                      '探索学习的本质，记录思维的变化轨�?,
+                      '探索学习的本质，记录思维的变化轨迹',
                       style: TextStyle(
                         fontSize: 16,
                         color: Colors.white70,
@@ -84,29 +84,29 @@ class LabScreen extends StatelessWidget {
   Widget _buildSeriesSection() {
     final series = [
       {
-        'title': '为什么要学习�?,
-        'subtitle': '探索学习的内在动�?,
+        'title': '为什么要学习？',
+        'subtitle': '探索学习的内在动力',
         'articles': 5,
         'color': const Color(0xFF00B894),
         'icon': Icons.psychology,
       },
       {
-        'title': '学习的熵与乐�?,
-        'subtitle': '理解学习过程中的混沌与秩�?,
+        'title': '学习的熵与乐趣',
+        'subtitle': '理解学习过程中的混沌与秩序',
         'articles': 3,
         'color': const Color(0xFF74B9FF),
         'icon': Icons.auto_awesome,
       },
       {
-        'title': '抗拖延实验记�?,
-        'subtitle': '与拖延症的持续斗�?,
+        'title': '抗拖延实验记录',
+        'subtitle': '与拖延症的持续斗争',
         'articles': 8,
         'color': const Color(0xFFFAB1A0),
         'icon': Icons.timer,
       },
       {
-        'title': '脑中小宇宙重启计�?,
-        'subtitle': '重新点燃学习热情的方�?,
+        'title': '脑中小宇宙重启计划',
+        'subtitle': '重新点燃学习热情的方法',
         'articles': 4,
         'color': const Color(0xFFA29BFE),
         'icon': Icons.refresh,
@@ -259,7 +259,7 @@ class _SeriesCard extends StatelessWidget {
         borderRadius: BorderRadius.circular(16),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.05),
+            color: Colors.black.withValues(alpha: 0.05),
             blurRadius: 10,
             offset: const Offset(0, 4),
           ),
@@ -273,7 +273,7 @@ class _SeriesCard extends StatelessWidget {
               Container(
                 padding: const EdgeInsets.all(8),
                 decoration: BoxDecoration(
-                  color: color.withOpacity(0.1),
+                  color: color.withValues(alpha: 0.1),
                   borderRadius: BorderRadius.circular(8),
                 ),
                 child: Icon(
@@ -286,11 +286,11 @@ class _SeriesCard extends StatelessWidget {
               Container(
                 padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                 decoration: BoxDecoration(
-                  color: color.withOpacity(0.1),
+                  color: color.withValues(alpha: 0.1),
                   borderRadius: BorderRadius.circular(12),
                 ),
                 child: Text(
-                  '$articles �?,
+                  '$articles 篇',
                   style: TextStyle(
                     color: color,
                     fontSize: 12,

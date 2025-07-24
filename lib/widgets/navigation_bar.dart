@@ -41,7 +41,7 @@ class _CustomNavigationBarState extends State<CustomNavigationBar> {
         ),
         boxShadow: _showShadow ? [
           BoxShadow(
-            color: Colors.black.withOpacity(0.1),
+            color: Colors.black.withValues(alpha: 0.1),
             blurRadius: 8,
             offset: const Offset(0, 2),
           ),
@@ -83,7 +83,7 @@ class _CustomNavigationBarState extends State<CustomNavigationBar> {
                 borderRadius: BorderRadius.circular(10),
                 boxShadow: [
                   BoxShadow(
-                    color: const Color(0xFF6C5CE7).withOpacity(0.3),
+                    color: const Color(0xFF6C5CE7).withValues(alpha: 0.3),
                     blurRadius: 8,
                     offset: const Offset(0, 2),
                   ),
@@ -100,7 +100,7 @@ class _CustomNavigationBarState extends State<CustomNavigationBar> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  '🪐 重拾 · 小宇�?,
+                  '🪐 重拾 · 小宇宙',
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 18,
@@ -109,7 +109,7 @@ class _CustomNavigationBarState extends State<CustomNavigationBar> {
                   ),
                 ),
                 Text(
-                  '探索欲与创造力的星系笔�?,
+                  '探索欲与创造力的星系笔记',
                   style: TextStyle(
                     color: Colors.white60,
                     fontSize: 11,
@@ -128,9 +128,9 @@ class _CustomNavigationBarState extends State<CustomNavigationBar> {
     final navItems = [
       NavItemData('首页', AppRoutes.home, Icons.home_outlined),
       NavItemData('仪式', AppRoutes.dailyGrowth, Icons.auto_awesome_outlined),
-      NavItemData('哇因�?, AppRoutes.wowMoments, Icons.star_outline),
+      NavItemData('哇因子', AppRoutes.wowMoments, Icons.star_outline),
       NavItemData('卡片', AppRoutes.techCards, Icons.library_books_outlined),
-      NavItemData('实验�?, AppRoutes.lab, Icons.science_outlined),
+      NavItemData('实验室', AppRoutes.lab, Icons.science_outlined),
       NavItemData('关于', AppRoutes.about, Icons.person_outline),
     ];
 
@@ -176,10 +176,10 @@ class _CustomNavigationBarState extends State<CustomNavigationBar> {
         return Container(
           padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
           decoration: BoxDecoration(
-            color: Colors.white.withOpacity(0.1),
+            color: Colors.white.withValues(alpha: 0.1),
             borderRadius: BorderRadius.circular(20),
             border: Border.all(
-              color: Colors.white.withOpacity(0.2),
+              color: Colors.white.withValues(alpha: 0.2),
               width: 1,
             ),
           ),
@@ -189,7 +189,7 @@ class _CustomNavigationBarState extends State<CustomNavigationBar> {
               Text(
                 'Today: ',
                 style: TextStyle(
-                  color: Colors.white.withOpacity(0.7),
+                  color: Colors.white.withValues(alpha: 0.7),
                   fontSize: 11,
                 ),
               ),
@@ -211,8 +211,8 @@ class _CustomNavigationBarState extends State<CustomNavigationBar> {
   String _getTodayStatus() {
     final hour = DateTime.now().hour;
     if (hour >= 6 && hour < 12) return '晨光初现 🌅';
-    if (hour >= 12 && hour < 18) return '专注工作 ☀�?;
-    if (hour >= 18 && hour < 22) return '黄昏思�?🌆';
+    if (hour >= 12 && hour < 18) return '专注工作 ☀️';
+    if (hour >= 18 && hour < 22) return '黄昏思考🌆';
     return '深夜探索 🌌';
   }
 
@@ -373,7 +373,7 @@ class _ToolButtonState extends State<_ToolButton> {
             padding: const EdgeInsets.all(8),
             decoration: BoxDecoration(
               color: _isHovered 
-                  ? Colors.white.withOpacity(0.1)
+                  ? Colors.white.withValues(alpha: 0.1)
                   : Colors.transparent,
               borderRadius: BorderRadius.circular(8),
             ),

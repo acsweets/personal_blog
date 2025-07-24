@@ -25,7 +25,7 @@ class PersonalBlogApp extends StatelessWidget {
         }),
       ],
       child: MaterialApp(
-        title: '重拾 · 小宇�?,
+        title: '重拾 · 小宇宙',
         theme: AppTheme.lightTheme,
         darkTheme: AppTheme.darkTheme,
         themeMode: ThemeMode.system,

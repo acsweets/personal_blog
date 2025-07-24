@@ -30,10 +30,10 @@ class HeroBanner extends StatelessWidget {
               return Container(
                 padding: const EdgeInsets.all(32.0),
                 decoration: BoxDecoration(
-                  color: Colors.white.withOpacity(0.1),
+                  color: Colors.white.withValues(alpha: 0.1),
                   borderRadius: BorderRadius.circular(16),
                   border: Border.all(
-                    color: Colors.white.withOpacity(0.2),
+                    color: Colors.white.withValues(alpha: 0.2),
                     width: 1,
                   ),
                 ),
@@ -45,7 +45,7 @@ class HeroBanner extends StatelessWidget {
                         Container(
                           padding: const EdgeInsets.all(8),
                           decoration: BoxDecoration(
-                            color: const Color(0xFF6C5CE7).withOpacity(0.2),
+                            color: const Color(0xFF6C5CE7).withValues(alpha: 0.2),
                             borderRadius: BorderRadius.circular(12),
                           ),
                           child: const Icon(
@@ -56,7 +56,7 @@ class HeroBanner extends StatelessWidget {
                         ),
                         const SizedBox(width: 12),
                         const Text(
-                          '今日哇因�?,
+                          '今日哇因子',
                           style: TextStyle(
                             color: Colors.white,
                             fontSize: 18,
@@ -81,7 +81,7 @@ class HeroBanner extends StatelessWidget {
                       Container(
                         padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
                         decoration: BoxDecoration(
-                          color: const Color(0xFF00B894).withOpacity(0.2),
+                          color: const Color(0xFF00B894).withValues(alpha: 0.2),
                           borderRadius: BorderRadius.circular(16),
                         ),
                         child: Text(
@@ -101,7 +101,7 @@ class HeroBanner extends StatelessWidget {
           ),
           const SizedBox(height: 32),
           const Text(
-            '探索欲与创造力的星系笔�?,
+            '探索欲与创造力的星系笔记',
             style: TextStyle(
               color: Colors.white70,
               fontSize: 16,

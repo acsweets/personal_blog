@@ -19,7 +19,7 @@ class CustomFooter extends StatelessWidget {
             children: [
               _FooterLink(
                 icon: Icons.email_outlined,
-                label: '联系�?,
+                label: '联系我',
                 onTap: () => _launchUrl('mailto:your-email@example.com'),
               ),
               const SizedBox(width: 32),
@@ -31,7 +31,7 @@ class CustomFooter extends StatelessWidget {
               const SizedBox(width: 32),
               _FooterLink(
                 icon: Icons.radio,
-                label: '小宇�?,
+                label: '小宇宙',
                 onTap: () => _launchUrl('https://xiaoyuzhou.fm/'),
               ),
             ],
@@ -43,7 +43,7 @@ class CustomFooter extends StatelessWidget {
           ),
           const SizedBox(height: 16),
           const Text(
-            '© 2024 重拾 · 小宇�?| 用心记录每一次成�?,
+            '© 2024 重拾 · 小宇宙 | 用心记录每一次成长',
             style: TextStyle(
               color: Colors.white54,
               fontSize: 14,
@@ -51,7 +51,7 @@ class CustomFooter extends StatelessWidget {
           ),
           const SizedBox(height: 8),
           const Text(
-            '探索欲与创造力的星系笔�?,
+            '探索欲与创造力的星系笔记',
             style: TextStyle(
               color: Colors.white38,
               fontSize: 12,
