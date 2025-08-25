@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import '../animations/page_transitions.dart';
 import '../routes/app_routes.dart';
 import '../screens/home_screen.dart';
 import '../screens/write_screen.dart';

@@ -167,9 +167,6 @@ class _CustomNavigationBarState extends State<CustomNavigationBar> {
   Widget _buildStatusBadge() {
     return Consumer<BlogModel>(
       builder: (context, blogModel, child) {
-        final todayGrowth = blogModel.dailyGrowths.isNotEmpty 
-            ? blogModel.dailyGrowths.first 
-            : null;
         
         final status = _getTodayStatus();
         

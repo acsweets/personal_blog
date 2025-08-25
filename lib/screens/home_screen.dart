@@ -5,7 +5,6 @@ import '../routes/app_routes.dart';
 import '../widgets/hero_banner.dart';
 import '../widgets/post_card.dart';
 import '../widgets/status_bar.dart';
-import '../animations/page_transitions.dart';
 import '../utils/route_manager.dart';
 
 class HomeScreen extends StatefulWidget {
